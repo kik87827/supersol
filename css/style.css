@@ -1,2 +1,18 @@
 ﻿@charset "utf-8";
 /* CSS Document */
+
+.popup_wrap{width:750px;position:fixed;top:0;left:50%;height:100%;transform: translateX(-50%);background:rgba(0,0,0,.4);font-family: 'Pretendard'; display:none;transition:.4s opacity;opacity:0;z-index:50;}
+.popup_wrap.active{display:block;}
+.popup_wrap.active.motion{opacity:1;}
+.popup_modal_container{display:table;table-layout: fixed;width:100%;height:100%;position:absolute;top:0;left:0;}
+.popup_modal_inner{display:table-cell;vertical-align: middle;text-align: center;padding:20px;}
+.popup_modal_box{background:#fff;max-width:340px;margin:0 auto;}
+.popup_modal_contents_row{display:flex;align-items: center;justify-content: center;text-align: center;box-sizing: border-box;padding:50px 20px;}
+.popup_modal_para{color:#0046fe;font-size:31px;font-weight:700;line-height:1.3;word-break: keep-all;text-align: center;}
+.popup_modal_btn_row{}
+.btn_popup_submit{background:#0046fe;display:flex;align-items: center;justify-content: center;min-height:50px;box-sizing: border-box;padding:10px;font-size:17px;color:#fff;font-weight:500;}
+.btn_popup_submit.primary{}
+
+@media (max-width:750px){
+    .popup_wrap{width:100%;left:0;transform: translateX(0);}
+}

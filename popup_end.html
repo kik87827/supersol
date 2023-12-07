@@ -13,8 +13,24 @@
 	<title></title>
 </head>
 <body>
-	<p style="font-family: 'OneShinhan';font-weight: 900; font-size:20px;">이벤트 메인</p>
-	<p style="font-family: 'OneShinhan';font-weight: 700; font-size:20px;">이벤트 메인</p>
-	<p style="font-family: 'OneShinhan';font-size:20px;">이벤트 메인</p>
+	<div class="popup_wrap" id="popup_modal">
+		<div class="popup_modal_container">
+			<div class="popup_modal_inner">
+				<div class="popup_modal_box">
+					<div class="popup_modal_contents_row">
+						<p class="popup_modal_para">이벤트에 참여하였습니다.</p>
+					</div>
+					<div class="popup_modal_btn_row">
+						<a href="#" class="btn_popup_submit primary close_trigger">확인</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		popupShow({
+			target : "#popup_modal"
+		});
+	</script>
 </body>
 </html>
