@@ -1,3 +1,47 @@
 ﻿@charset "utf-8";
 /* CSS Document */
 
+
+.landing_wrap{text-align:center;position:relative;overflow-x:hidden;}
+
+.ldue_w{background:#efeff0;padding:40px 0;}
+.ldue_pixin{text-align:left;max-width:716px;margin:0 auto;}
+.ldue_titlow{}
+.ldue_tit{color:#454545;font-family: 'Pretendard';font-size:20px;position:relative;font-weight: 700;line-height:1;}
+.ldue_contlow{margin-top:20px;}
+.ldue_vlist{}
+.ldue_vlist > li{font-size:14px;color:#454545;line-height:1.2;padding-left:12px;font-family: 'Pretendard';position:relative;margin-bottom:8px;word-break: keep-all;}
+.ldue_vlist > li:last-of-type{margin-bottom:0;}
+.ldue_vlist > li:before{display:block;content:'';width:5px;height:5px;background:#454545;position:absolute;top:5px;left:0;border-radius: 100%;}
+.ldue_dashvlist {margin-top:8px;}
+.ldue_dashvlist > li{position:relative;padding-left:12px;margin-bottom:8px;word-break: keep-all;}
+.ldue_dashvlist > li:last-of-type{margin-bottom:0;}
+.ldue_dashvlist > li:before{display:block;content:'-';position:absolute;top:0;left:0;}
+
+@media (max-width:1023px){
+    .ldue_w{padding:30px 20px;}
+    .ldue_tit{font-size:16px;}
+    .ldue_tit:before{background:url("../images/ico_impcir_h.png") no-repeat 0 0/cover;width:20px;height:20px;}
+    .ldue_contlow{margin-top:15px;}
+    .ldue_vlist > li{font-size:13px;margin-bottom:5px;padding-left:12px}
+    .ldue_vlist > li:before {top:5px;width: 4px;height:4px;}
+    .ldue_dashvlist > li,
+    .ldue_dashvlist > li{margin-bottom:5px;}
+    .ldue_dashvlist{margin-top:5px;}
+}
+
+.landing_cont {
+    background-color: #000;
+}
+.landing_cont_in {
+    position: relative;
+    max-width: 1023px;
+}
+.landing_logo {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+.landing_logo img {max-width: 50%;}
+.landing_notice {background-color: #efeff0;text-align: center;}
+.landing_notice img {max-width: 100%;}
