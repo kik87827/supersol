@@ -8,10 +8,16 @@
 .popup_modal_inner{display:table-cell;vertical-align: middle;text-align: center;padding:20px;}
 .popup_modal_box{background:#fff;max-width:340px;margin:0 auto;}
 .popup_modal_contents_row{display:flex;align-items: center;justify-content: center;text-align: center;box-sizing: border-box;padding:50px 20px;}
+.popup_modal_contents_row.type2{padding:20px;display:block;}
 .popup_modal_para{color:#0046fe;font-size:31px;font-weight:700;line-height:1.3;word-break: keep-all;text-align: center;}
 .popup_modal_btn_row{}
 .btn_popup_submit{background:#0046fe;display:flex;align-items: center;justify-content: center;min-height:50px;box-sizing: border-box;padding:10px;font-size:17px;color:#fff;font-weight:500;}
 .btn_popup_submit.primary{}
+
+.popup_modal_title{font-size:21px;color:#4d4d4d;font-weight:500;}
+.popup_modal_title_sub{font-size:17px;color:#4d4d4d;margin-top:15px;}
+.popup_modal_design_img{text-align: center;margin-top:20px;}
+.popup_modal_design_img img{vertical-align: top;max-width:227px;}
 
 @media (max-width:750px){
     .popup_wrap{width:100%;left:0;transform: translateX(0);}

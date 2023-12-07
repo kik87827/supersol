@@ -13,8 +13,31 @@
 	<title></title>
 </head>
 <body>
-	<p style="font-family: 'OneShinhan';font-weight: 900; font-size:20px;">이벤트 메인</p>
-	<p style="font-family: 'OneShinhan';font-weight: 700; font-size:20px;">이벤트 메인</p>
-	<p style="font-family: 'OneShinhan';font-size:20px;">이벤트 메인</p>
+	<div class="popup_wrap" id="popup_modal_02">
+		<div class="popup_modal_container">
+			<div class="popup_modal_inner">
+				<div class="popup_modal_box">
+					<div class="popup_modal_contents_row type2">
+						<div class="popup_modal_title">알림</div>
+						<div class="popup_modal_title_sub">이벤트 참여를 위해 <br>본인인증이 필요합니다.</div>
+						<div class="popup_modal_design_img">
+							<img src="./images/img_iden.jpg" alt="">
+						</div>
+					</div>
+					<div class="popup_modal_btn_row">
+						<a href="#" class="btn_popup_submit primary close_trigger">본인인증하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		popupShow({
+			target : "#popup_modal_02"
+		});
+		/* popupHide({
+			target : "#popup_modal_02"
+		}); */
+	</script>
 </body>
 </html>
