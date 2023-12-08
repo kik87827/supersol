@@ -57,20 +57,26 @@ function bottomLayer(){
 function agreeFunc(){
 	const agree_toggle_onebox = document.querySelector(".agree_toggle_onebox");
 	const agree_toggle_global_contents = document.querySelector(".agree_toggle_global_contents");
-	const ok_form = document.querySelectorAll(".ok_form,.agree_toggle_bar .props_form")
+	const ok_form = document.querySelectorAll(".ok_form,.agree_toggle_bar .props_form");
+	const total_agree = document.querySelector("#total_agree");
 	if(!!agree_toggle_onebox){
 		agree_toggle_onebox.addEventListener("click",(e)=>{
 
-			e.preventDefault();
+			//e.preventDefault();
 			
 			const thisTarget = e.currentTarget;
 			const thisTargetProps = thisTarget.querySelector(".props_form");
 
 			thisTarget.classList.toggle("active");
 			agree_toggle_global_contents.classList.toggle("active");
-			thisTargetProps.checked = thisTarget.classList.contains("active");
+			// thisTargetProps.checked = thisTarget.classList.contains("active");
+		});
+	}
+	if(!!total_agree){
+		total_agree.addEventListener("click",(e)=>{
+			const thisTarget = e.currentTarget;
 			ok_form.forEach((item)=>{
-				item.checked = thisTarget.classList.contains("active");
+				item.checked = thisTarget.checked;
 			});
 		});
 	}
