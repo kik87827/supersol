@@ -25,6 +25,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .popup_modal_design_img{text-align: center;margin-top:20px;}
 .popup_modal_design_img img{vertical-align: top;max-width:227px;}
 
+.full_page_container{background:#fff;position:relative;}
 .full_popup_container{background:#fff;display:flex;flex-direction: column;height:100%;position:absolute;top:0;left:0;width:100%;}
 .full_popup_title_row{flex:0;padding:30px 70px 20px 20px;}
 .full_popup_title{font-size:17px;font-weight:700;}
