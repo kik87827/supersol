@@ -10,13 +10,16 @@ function popupShow(option){
 	const targetDom = document.querySelector(option.target);
 	const bodyDom = document.querySelector("body");
 	const closeDom = document.querySelectorAll(".close_trigger");
+	let touchstart = "ontouchstart" in window;
 	let setTime = 0;
 	bodyDom.append(targetDom);
 	targetDom.classList.add("active");
 	if(setTime){clearTimeout(setTime)}
 	setTime = setTimeout(()=>{
 		targetDom.classList.add("motion");
-		bodyDom.classList.add("touchDis");
+		if(touchstart){
+			bodyDom.classList.add("touchDis");
+		}
 	},20);
 
 	// event

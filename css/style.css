@@ -7,7 +7,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 
 /* CSS Document */
 
-.popup_wrap{width:750px;position:fixed;top:0;left:50%;height:100%;transform: translateX(-50%);background:rgba(0,0,0,.4);font-family: 'Pretendard'; display:none;transition:.4s opacity;opacity:0;z-index:50;}
+.popup_wrap{width:100%;position:fixed;top:0;left:0;height:100%;transform: 0;background:rgba(0,0,0,.4);font-family: 'Pretendard'; display:none;transition:.4s opacity;opacity:0;z-index:50;}
 .popup_wrap.active{display:block;}
 .popup_wrap.active.motion{opacity:1;}
 .popup_modal_container{display:table;table-layout: fixed;width:100%;height:100%;position:absolute;top:0;left:0;}
@@ -26,7 +26,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .popup_modal_design_img img{vertical-align: top;max-width:227px;}
 
 .full_page_container{background:#fff;position:relative;}
-.full_popup_container{background:#fff;display:flex;flex-direction: column;height:100%;position:absolute;top:0;left:0;width:100%;}
+.full_popup_container{background:#fff;display:flex;flex-direction: column;height:100%;position:absolute;top:0;left:50%;width:100%;max-width:750px;transform: translateX(-50%);}
 .full_popup_title_row{flex:0;padding:30px 70px 20px 20px;}
 .full_popup_title{font-size:17px;font-weight:700;}
 
@@ -76,7 +76,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .agree_toggle_onebox.active:after{transform: rotate(225deg);top:18px;border-color:#0046ff}
 
 .agree_toggle_bar{display:block;border:1px solid #6a6a6a;padding:12px 45px 12px 15px;position:relative;}
-.agree_toggle_bar:after{display:block;content:'';width:10px;height:10px;border-right:2px solid #454545;border-top:2px solid #454545;position:absolute;top:13px;right:19px;transform: rotate(45deg);}
+.agree_toggle_bar:after{display:block;content:'';width:10px;height:10px;border-right:2px solid #454545;border-top:2px solid #454545;position:absolute;top:14px;right:19px;transform: rotate(45deg);}
 .props_item{display:inline-flex;gap:8px;position:relative;}
 .props_form{appearance: none;-webkit-appearance: none;width:14px;height:14px;border:1px solid #6a6a6a;background:#fff url("../images/ico_agree_checkbox.png") no-repeat 0 0/100% auto;vertical-align: middle; flex:0 0 14px;}
 .props_form:checked{background-position:0 100%; background-color:#0046ff;border-color:#0046ff;}
