@@ -37,7 +37,7 @@
 						</div>
 					</div>
 					<div class="f_vcont">
-						<a href="#" class="agree_toggle_onebox">
+						<a href="javascript:;" class="agree_toggle_onebox">
 							<div class="props_item global">
 								<input type="checkbox" class="props_form" id="total_agree">
 								<label for="total_agree" class="props_label type2">전체동의</label>
@@ -47,7 +47,7 @@
 							<ul class="agree_toggle_list">
 								<li>
 									<div class="agree_toggle_one_row">
-										<a href="#" class="agree_toggle_bar">
+										<a href="#" class="agree_toggle_bar" id="btn_terms_popup_01">
 											<div class="props_item">
 												<input type="checkbox" class="props_form" id="agree_tail_01">
 												<label for="agree_tail_01" class="props_label">수집·이용 동의</label>
@@ -177,7 +177,7 @@
 								</li>
 								<li>
 									<div class="agree_toggle_one_row">
-										<a href="#" class="agree_toggle_bar">
+										<a href="#" class="agree_toggle_bar" id="btn_terms_popup_02">
 											<div class="props_item">
 												<input type="checkbox" class="props_form" id="agree_tail_03">
 												<label for="agree_tail_03" class="props_label">제공동의</label>
@@ -223,8 +223,209 @@
 			<a href="#" class="btn_finish_submit primary">확인</a>
 		</div>
 	</div>
+
+	<!-- popup -->
+	<div class="popup_wrap" id="popup_full_detail_01">
+		<div class="full_popup_container">
+			<div class="full_popup_title_row">
+				<h2 class="full_popup_title">수집 · 이용에 관한 사항</h2>
+			</div>
+			<div class="full_popup_contents_row">
+				<div class="terms_tail_wrap">
+					<p class="terms_tail_guide">당사는 귀하의 개인(신용)정보를 다음과 같이 수집·이용하고자 합니다.</p>
+					<div class="terms_block_wrap">
+						<p class="terms_block_title">동의내용 평가등급</p>
+						<div class="terms_img_group">
+							<img src="./images/level_01.png" alt="">
+						</div>
+						<div class="terms_caption_group">
+							<p class="terms_cont_para">※ 위 등급은 사생활 침해 위험, 혜택, 명확성 등을 종합적으로 
+								고려하여 동의내용의 평가등급을 제공하는 제도입니다.<br>
+								(자세한 내용은 <a href="#" class="emp_link" target="_blank">[한국신용정보원]</a> 에서 확인 가능합니다.)</p>
+						</div>
+					</div>
+					<div class="terms_guide_tb_wrap">
+						<table class="terms_guide_tb">
+							<tr>
+								<th><span class="terms_thtext">수집·이용<br>목적</span></th>
+								<td>
+									<p class="terms_tdpara emp">상품·서비스 소개 및 판매, 사은·판촉행사 안내, 마케팅 
+										조사, 부가 서비스/제휴업체 편의 제공, 고객정보관리, 
+										고객 통계 및 분석</p>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="terms_thtext">보유·이용<br>기간</span></th>
+								<td>
+									<p class="terms_tdpara emp">직접 선택하신 기간</p>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="terms_thtext">수집·이용<br>항목</span></th>
+								<td>
+									<p class="terms_tdpara emp">개인(신용)정보(14개)</p>
+									<ul class="terms_data_list">
+										<li>
+											<span class="terms_data_bullet emp">-</span>
+											<div class="terms_data_para_g">
+												<p class="terms_data_para emp">일반개인정보(12개)</p>
+												<p class="terms_data_para">성명, 주소, 생년월일 등</p>
+											</div>
+										</li>
+										<li>
+											<span class="terms_data_bullet emp">-</span>
+											<div class="terms_data_para_g">
+												<p class="terms_data_para emp">신용거래정보(2개)</p>
+												<p class="terms_data_para">보험계약정보, 대출정보</p>
+											</div>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="terms_thtext">거부 권리<br>및 불이익</span></th>
+								<td>
+									<p class="terms_tdpara">귀하는 아래 개인(신용)정보 제공에 관한 동의를 
+										거부하실 수 있습니다. 다만, 동의하지 않으실 경우 
+										"제휴사 상품 및 서비스 안내, 이벤트 등" 혜택을 
+										받지 못할 수 있습니다.</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="note_wrap">
+					<ul class="note_list">
+						<li>※ 본 동의는 당사와 모집위탁계약을 체결한 업무수탁자 (당사 전속 
+							보험설계사 및 계약을 모집한 보험대리점, 대출상담센터)가 
+							수집·이용하는 것을 포함합니다.</li>
+						<li>※ 상기 내용에 동의하시는 경우 당사 임직원 또는 업무수탁자가 
+							상품·서비스 소개 및 판매 안내연락(TM 등)을 드릴 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="full_popup_btn_row">
+				<a href="#" class="btn_popup_submit second close_trigger"><span class="btn_popup_submit_text">동의하지 않음</span></a>
+				<a href="#" class="btn_popup_submit close_trigger"><span class="btn_popup_submit_text">동의</span></a>
+			</div>
+			<a href="#" class="btn_popup_close close_trigger"></a>
+		</div>
+	</div>
+
+	<div class="popup_wrap" id="popup_full_detail_02">
+		<div class="full_popup_container">
+			<div class="full_popup_title_row">
+				<h2 class="full_popup_title">수집 · 이용에 관한 사항</h2>
+			</div>
+			<div class="full_popup_contents_row">
+				<div class="terms_tail_wrap">
+					<p class="terms_tail_guide">당사는 귀하의 개인(신용)정보를 다음과 같이 제공하고자 합니다.</p>
+					<div class="terms_block_wrap">
+						<p class="terms_block_title">동의내용 평가등급</p>
+						<div class="terms_img_group">
+							<img src="./images/level_02.png" alt="">
+						</div>
+						<div class="terms_caption_group">
+							<p class="terms_cont_para bold">※ 위 등급은 사생활 침해 위험, 혜택, 명확성 등을 종합적으로 
+								고려하여 동의내용의 평가등급을 제공하는 제도입니다.<br>
+								(자세한 내용은 <a href="#" class="emp_link" target="_blank">[한국신용정보원]</a> 에서 확인 가능합니다.)</p>
+						</div>
+					</div>
+					<div class="terms_guide_tb_wrap">
+						<table class="terms_guide_tb">
+							<tr>
+								<th><span class="terms_thtext">제공받는 자<br>(12개사)</span></th>
+								<td>
+									<p class="terms_tdpara emp">신한금융그룹사 (신한은행, 신한카드, 신한투자증권, 
+										신한자산운용, 신한캐피탈, 제주은행, 신한저축은행, 
+										신한자산신탁, 신한DS, 신한펀드파트너스, 신한신용
+										정보)</p>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="terms_thtext">제공·이용<br>목적</span></th>
+								<td>
+									<p class="terms_tdpara emp">제휴사의 상품·서비스 소개 및 판매, 부가 서비스/제휴업체 편의 제공</p>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="terms_thtext">보유·이용<br>기간</span></th>
+								<td>
+									<p class="terms_tdpara emp">동의일로부터 3년 또는 동의 철회시까지</p>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="terms_thtext">제공항목</span></th>
+								<td>
+									<p class="terms_tdpara emp">개인(신용)정보(9개)</p>
+									<ul class="terms_data_list">
+										<li>
+											<span class="terms_data_bullet emp">-</span>
+											<div class="terms_data_para_g">
+												<p class="terms_data_para emp">일반개인정보(7개)</p>
+												<p class="terms_data_para">성명, 주소, 생년월일 등</p>
+											</div>
+										</li>
+										<li>
+											<span class="terms_data_bullet emp">-</span>
+											<div class="terms_data_para_g">
+												<p class="terms_data_para emp">신용거래정보(2개)</p>
+												<p class="terms_data_para">보험계약정보, 대출정보</p>
+											</div>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th><span class="terms_thtext">거부 권리<br>및 불이익</span></th>
+								<td>
+									<p class="terms_tdpara">귀하는 아래 개인(신용)정보 제공에 관한 동의를 
+										거부하실 수 있습니다. 다만, 동의하지 않으실 경우 
+										"제휴사 상품 및 서비스 안내, 이벤트 등" 혜택을 
+										받지 못할 수 있습니다.</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="note_wrap">
+					<ul class="note_list">
+						<li>※ 각 제공대상기관 및 이용목적의 구체적인 정보는 당사 홈페이지
+							(<a href="www.shinhanlife.co.kr" target="_blank" class="btn_textlink">www.shinhanlife.co.kr</a>)에서 확인 할 수 있습니다.</li>
+						<li>※ 금융지주사법 제 48조의 2에 근거하여 신한금융그룹내 지주사 및 
+							자회사간에는 별도 동의가 없더라도 내부 경영관리 목적에 한하여 
+							고객정보의 제공 및 이용이 가능합니다.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="full_popup_btn_row">
+				<a href="#" class="btn_popup_submit second close_trigger"><span class="btn_popup_submit_text">동의하지 않음</span></a>
+				<a href="#" class="btn_popup_submit close_trigger"><span class="btn_popup_submit_text">동의</span></a>
+			</div>
+			<a href="#" class="btn_popup_close close_trigger"></a>
+		</div>
+	</div>
+	<!-- // popup -->
 	<script>
 		agreeFunc();
+
+		$(function(){
+			$("#btn_terms_popup_01").on("click",function(e){
+				if($(e.target).parents(".props_item").length){return;}
+				e.preventDefault();
+				popupShow({
+					target : "#popup_full_detail_01"
+				});
+			});
+			$("#btn_terms_popup_02").on("click",function(e){
+				if($(e.target).parents(".props_item").length){return;}
+				e.preventDefault();
+				popupShow({
+					target : "#popup_full_detail_02"
+				});
+			});
+		})
 	</script>
 </body>
 </html>

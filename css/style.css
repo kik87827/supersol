@@ -74,13 +74,14 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 
 .agree_toggle_onebox.active{border-color:#0046ff;}
 .agree_toggle_onebox.active:after{transform: rotate(225deg);top:18px;border-color:#0046ff}
-
+.agree_toggle_bar .props_item,
+.agree_toggle_onebox .props_item{position:relative;top:1px;}
 .agree_toggle_bar{display:block;border:1px solid #6a6a6a;padding:12px 45px 12px 15px;position:relative;}
 .agree_toggle_bar:after{display:block;content:'';width:10px;height:10px;border-right:2px solid #454545;border-top:2px solid #454545;position:absolute;top:14px;right:19px;transform: rotate(45deg);}
 .props_item{display:inline-flex;gap:8px;position:relative;}
 .props_form{appearance: none;-webkit-appearance: none;width:14px;height:14px;border:1px solid #6a6a6a;background:#fff url("../images/ico_agree_checkbox.png") no-repeat 0 0/100% auto;vertical-align: middle; flex:0 0 14px;}
 .props_form:checked{background-position:0 100%; background-color:#0046ff;border-color:#0046ff;}
-.props_label{color:#454545;display:inline-block;font-weight:700;cursor: pointer;}
+.props_label{color:#454545;display:inline-block;font-weight:700;cursor: pointer;vertical-align: middle;}
 .props_label:after{display:block;content:'';width:calc(100% + 10px);height:calc(100% + 10px);position:absolute;top:-5px;left:-5px;}
 .props_label.type2{}
 .props_item.circle_type{gap:5px;}
