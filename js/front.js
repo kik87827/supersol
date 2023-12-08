@@ -84,3 +84,18 @@ function agreeFunc(){
 		});
 	}
 }
+
+
+// 바디 스크롤 잠금 disable
+function bodyScrollDisabled(){
+	$(function(){
+		$("body").addClass("touchDis");
+	});
+}
+
+// 바디 스크롤 해제 disable
+function bodyScrollEnbled(){
+	$(function(){
+		$("body").removeClass("touchDis");
+	});
+}
