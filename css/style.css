@@ -19,6 +19,121 @@
 .popup_modal_design_img{text-align: center;margin-top:20px;}
 .popup_modal_design_img img{vertical-align: top;max-width:227px;}
 
+.page_wrap{width:750px;margin:0 auto;font-family: 'Pretendard';padding-bottom:60px;}
+.agree_vitem_wrap{}
+.agree_vitem{padding:20px;}
+.agree_vitem.intro_item{padding:40px 20px 20px;}
+.agree_vitem.type2{background:#eee;}
+.btn_bottom_layer{position:fixed;bottom:0;left:50%;width:750px;transform: translateX(-50%);z-index:30;}
+.btn_finish_submit_wrap{display:flex;}
+.btn_finish_submit{flex:1;background:#eee;color:#454545;display:flex;align-items: center;justify-content: center;min-height:60px;box-sizing: border-box;padding:10px;font-size:22px;}
+.btn_finish_submit.primary{background:#0046fe;color:#fff;}
+.agree_vtitle_01{font-size:17px;color:#454545; font-weight:700;line-height:1.4;}
+.agree_vtitle_01 strong{color:#0046fe; font-weight:700;}
+
+.agree_vtitle_02{margin-top:25px;color:#454545;}
+.agree_vtitle_main{font-size:14px;font-weight:500;}
+.agree_vtitle_sub{margin-top:5px;}
+.btn_textlink{color:#0046fe;display:inline;}
+
+.agree_vhead_text{color:#4d4d4d;font-weight:700;}
+.agree_vbody_box{margin-top:10px;border:1px solid #454545;padding:10px 15px;}
+
+.agree_vcopy{color:#454545; font-size:12px;line-height:1.4;}
+
+.agree_toggle_body{}
+.agree_toggle_onebox{display:block;border:1px solid #6a6a6a;padding:12px 45px 12px 15px;position:relative;}
+.agree_toggle_onebox:after{display:block;content:'';width:10px;height:10px;border-right:2px solid #454545;border-bottom:2px solid #454545;position:absolute;top:10px;right:15px;transform: rotate(45deg);}
+
+.agree_toggle_onebox.active{border-color:#0046ff;}
+.agree_toggle_onebox.active:after{transform: rotate(225deg);top:18px;border-color:#0046ff}
+
+.agree_toggle_bar{display:block;border:1px solid #6a6a6a;padding:12px 45px 12px 15px;position:relative;}
+.agree_toggle_bar:after{display:block;content:'';width:10px;height:10px;border-right:2px solid #454545;border-top:2px solid #454545;position:absolute;top:13px;right:19px;transform: rotate(45deg);}
+.props_item{display:inline-flex;gap:8px;position:relative;}
+.props_form{appearance: none;-webkit-appearance: none;width:14px;height:14px;border:1px solid #6a6a6a;background:#fff url("../images/ico_agree_checkbox.png") no-repeat 0 0/100% auto;vertical-align: middle; flex:0 0 14px;}
+.props_form:checked{background-position:0 100%; background-color:#0046ff;border-color:#0046ff;}
+.props_label{color:#454545;display:inline-block;font-weight:700;}
+.props_label:after{display:block;content:'';width:calc(100% + 10px);height:calc(100% + 10px);position:absolute;top:-5px;left:-5px;}
+.props_label.type2{}
+.props_item.circle_type{gap:5px;}
+.props_item.circle_type .props_form{border:1px solid #5d5d5d;box-sizing: border-box;border-radius:100%;}
+.props_item.circle_type .props_form:checked{border:4px solid #0046ff;background:transparent;}
+.props_item.circle_type .props_form:checked + .props_label{color:#0046ff;}
+.props_item.circle_type .props_label{font-weight:400;}
+.agree_toggle_two_row{background:#eeeeee;margin-top:10px;padding:0 15px;}
+.agree_two_block{padding:20px 0;border-bottom:1px solid #454545}
+.agree_two_block:last-of-type{border-bottom:0}
+.agree_props_list{display:flex;flex-wrap:wrap;gap:5px 0;}
+.agree_props_list > li{box-sizing: border-box;flex:0 0 50%;padding:0 5px 0 0;}
+.agree_props_list > li .props_item{}
+.agree_props_list > li:last-of-type{}
+
+.agree_props_list.type2{justify-content: space-between;flex-wrap:nowrap}
+.agree_props_list.type2 > li{flex:none;padding:0;}
+
+.agree_toggle_list{}
+.agree_toggle_list > li{margin-bottom:20px;}
+.agree_toggle_list > li:last-of-type{margin-bottom:0;}
+
+.agree_toggle_global_contents{margin-top:20px;display:none;}
+.agree_toggle_global_contents.active{display:block;}
+
+.agree_vcopy_wrap{margin-top:30px;}
+
+.agree_props_title{font-size:13px;color:#454545;margin-bottom:12px;}
+.agree_props_title.emp{font-weight:700;}
+
+.terms_title_row{padding:40px 20px 20px;}
+.terms_title{    
+    font-size: 17px;
+    color: #454545;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.terms_cont_wrap{}
+.terms_cont{padding:10px 20px;}
+.terms_cont_title{font-size:12px;color:#454545;font-weight:700;}
+.terms_cont.type2{background:#eee;padding:20px;margin:10px 0;}
+.terms_cont:first-of-type{}
+.terms_cont:last-of-type{}
+.terms_cont_contents{margin-top:5px;}
+.terms_cont_para{font-size:12px;color:#454545;line-height:1.4;}
+.bold{font-weight:700 !important;}
+.bold *{font-weight:700 !important;}
+.emp_link,
+.terms_cont .emp{color:#0046ff;}
+.note_wrap{padding:20px;color:#454545;font-weight:300;line-height:1.4;}
+
+.indent_item_list{margin-top:5px;line-height:1.4;}
+.indent_item_list > li{display:flex;gap:5px;}
+.indent_bullet{flex:0;white-space: nowrap;}
+.indent_para_group{flex:1;}
+
+.step_level_wrap{padding:12px 0 20px;}
+.step_level_label_list{display:flex;text-align: center;margin-bottom:5px;}
+.step_level_label_list > li{flex:1;}
+.step_level_label{font-size:10px;color:#454545; font-weight:300;}
+.step_level_bar_list{height:10px;position:relative;border-radius:100px;display:flex;gap:1px;}
+.step_level_bar_list > li{flex:1;position:relative;}
+.step_level_bar_list > li.has_ico:after{display:block;content:'';width:9px;height:13px;background:url("../images/ico_step_water.png") no-repeat 50% 50%/100% auto;position:absolute;top:5px;left:50%;transform: translateX(-50%);}
+.step_level_bar_list > li.bg01{background:#00b7ee;}
+.step_level_bar_list > li.bg02{background:#b3d465;}
+.step_level_bar_list > li.bg03{background:#fff45c;}
+.step_level_bar_list > li.bg04{background:#f19149;}
+.step_level_bar_list > li.bg05{background:#ec6941;}
+
+.step_level_bar_list > li:first-of-type{border-radius:100px 0 0 100px;}
+.step_level_bar_list > li:last-of-type{border-radius:0 100px 100px 0;}
+
 @media (max-width:750px){
+    .page_wrap{width:auto;}
+    .btn_bottom_layer,
     .popup_wrap{width:100%;left:0;transform: translateX(0);}
+}
+
+@media (max-width:320px){
+    .agree_props_list.type2{justify-content: flex-start;flex-wrap:wrap;gap:10px;}
+    .agree_props_list.type2 > li{flex:auto;}
 }
