@@ -16,11 +16,11 @@
     margin: 0 auto;
     background: url("../images/bg_main.jpg") no-repeat 50% 0;
     background-size: 100% auto;
-    padding-bottom: 5.5%;
+    padding-bottom: 6%;
 }
 @media (min-width:750px){
     .main_cont_in {
-        padding-bottom: 43px;
+        padding-bottom: 45px;
     }
 }
 .main_logo {
