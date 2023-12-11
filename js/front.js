@@ -10,13 +10,16 @@ function popupShow(option){
 	const targetDom = document.querySelector(option.target);
 	const bodyDom = document.querySelector("body");
 	const closeDom = document.querySelectorAll(".close_trigger");
+	let touchstart = "ontouchstart" in window;
 	let setTime = 0;
 	bodyDom.append(targetDom);
 	targetDom.classList.add("active");
 	if(setTime){clearTimeout(setTime)}
 	setTime = setTimeout(()=>{
 		targetDom.classList.add("motion");
-		bodyDom.classList.add("touchDis");
+		if(touchstart){
+			bodyDom.classList.add("touchDis");
+		}
 	},20);
 
 	// event
@@ -57,21 +60,42 @@ function bottomLayer(){
 function agreeFunc(){
 	const agree_toggle_onebox = document.querySelector(".agree_toggle_onebox");
 	const agree_toggle_global_contents = document.querySelector(".agree_toggle_global_contents");
-	const ok_form = document.querySelectorAll(".ok_form,.agree_toggle_bar .props_form")
+	const ok_form = document.querySelectorAll(".ok_form,.agree_toggle_bar .props_form");
+	const total_agree = document.querySelector("#total_agree");
 	if(!!agree_toggle_onebox){
 		agree_toggle_onebox.addEventListener("click",(e)=>{
 
-			e.preventDefault();
+			//e.preventDefault();
 			
 			const thisTarget = e.currentTarget;
 			const thisTargetProps = thisTarget.querySelector(".props_form");
 
 			thisTarget.classList.toggle("active");
 			agree_toggle_global_contents.classList.toggle("active");
-			thisTargetProps.checked = thisTarget.classList.contains("active");
+			// thisTargetProps.checked = thisTarget.classList.contains("active");
+		});
+	}
+	if(!!total_agree){
+		total_agree.addEventListener("click",(e)=>{
+			const thisTarget = e.currentTarget;
 			ok_form.forEach((item)=>{
-				item.checked = thisTarget.classList.contains("active");
+				item.checked = thisTarget.checked;
 			});
 		});
 	}
+}
+
+
+// 바디 스크롤 잠금 disable
+function bodyScrollDisabled(){
+	$(function(){
+		$("body").addClass("touchDis");
+	});
+}
+
+// 바디 스크롤 해제 disable
+function bodyScrollEnbled(){
+	$(function(){
+		$("body").removeClass("touchDis");
+	});
 }
