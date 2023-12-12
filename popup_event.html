@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./css/reset.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/event_main.css" rel="stylesheet">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/front.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="page_wrap">
+		<div class="popup_wrap" id="popup_full_event">
+			<div class="full_popup_container type2">
+				<div class="full_popup_title_row">
+					<h2 class="full_popup_title">이벤트 참여</h2>
+				</div>
+				<div class="full_popup_contents_row">
+					<div class="brick_item">
+						<div class="render_title_wrap">
+							<h3 class="render_title_main">신한 슈퍼SOL 론칭 이벤트</h3>
+							<p class="render_title_sub">2023.12.06 ~ 2023.12.22</p>
+						</div>
+						<div class="render_message_wrap">
+							<p class="render_meaage_main">아래의 정보로 응모하시겠습니까?</p>
+							<div class="render_data_tb">
+								<dl class="render_data_tr">
+									<dt><span class="render_data_key">이름</span></dt>
+									<dd><span class="render_data_value">김예진</span></dd>
+								</dl>
+								<dl class="render_data_tr">
+									<dt><span class="render_data_key">휴대폰 번호</span></dt>
+									<dd><span class="render_data_value">010-44**-01**</span></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div class="brick_item">
+						<p class="terms_title">이벤트 참여 및 경품 제공을 위해 동의합니다.</p>
+					</div>
+				</div>
+				<a href="#" class="btn_popup_close close_trigger"></a>
+			</div>
+		</div>
+	</div>
+	<script>
+		popupShow({
+			target : "#popup_full_event"
+		});
+	</script>
+</body>
+</html>

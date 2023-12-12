@@ -29,6 +29,10 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .full_popup_container{background:#fff;display:flex;flex-direction: column;height:100%;position:absolute;top:0;left:50%;width:100%;max-width:750px;transform: translateX(-50%);}
 .full_popup_title_row{flex:0;padding:30px 70px 20px 20px;}
 .full_popup_title{font-size:17px;font-weight:700;}
+.full_popup_container.type2 .full_popup_title{color:#000000;font-family: 'OneShinhan';line-height:1;}
+.full_popup_container.type2 .full_popup_title_row{flex:0 0 55px;padding:10px 20px;box-sizing: border-box;display:flex;align-items: center;border-bottom:1px solid #efefef;}
+
+.full_popup_container.type2 .btn_popup_close{width:55px;height:55px;top:0;right:0;}
 
 .full_popup_contents_row{flex:1;min-height:0;padding:0 20px 30px;overflow:hidden;overflow-y:auto;}
 
