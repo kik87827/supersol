@@ -20,28 +20,67 @@
 					<h2 class="full_popup_title">이벤트 참여</h2>
 				</div>
 				<div class="full_popup_contents_row">
-					<div class="brick_item">
-						<div class="render_title_wrap">
-							<h3 class="render_title_main">신한 슈퍼SOL 론칭 이벤트</h3>
-							<p class="render_title_sub">2023.12.06 ~ 2023.12.22</p>
+					<div class="brick_item_wrap">
+						<div class="brick_item">
+							<div class="render_title_wrap">
+								<h3 class="render_title_main">신한 슈퍼SOL 론칭 이벤트</h3>
+								<p class="render_title_sub">2023.12.06 ~ 2023.12.22</p>
+							</div>
+							<div class="render_message_wrap">
+								<p class="render_meaage_main">아래의 정보로 응모하시겠습니까?</p>
+								<div class="render_data_tb">
+									<dl class="render_data_tr">
+										<dt><span class="render_data_key">이름</span></dt>
+										<dd><span class="render_data_value">김예진</span></dd>
+									</dl>
+									<dl class="render_data_tr">
+										<dt><span class="render_data_key">휴대폰 번호</span></dt>
+										<dd><span class="render_data_value">010-44**-01**</span></dd>
+									</dl>
+								</div>
+							</div>
 						</div>
-						<div class="render_message_wrap">
-							<p class="render_meaage_main">아래의 정보로 응모하시겠습니까?</p>
-							<div class="render_data_tb">
-								<dl class="render_data_tr">
-									<dt><span class="render_data_key">이름</span></dt>
-									<dd><span class="render_data_value">김예진</span></dd>
-								</dl>
-								<dl class="render_data_tr">
-									<dt><span class="render_data_key">휴대폰 번호</span></dt>
-									<dd><span class="render_data_value">010-44**-01**</span></dd>
-								</dl>
+						<div class="brick_item">
+							<p class="terms_title">이벤트 참여 및 경품 제공을 위해 동의합니다.</p>
+							<div class="terms_toggle_zone">
+								<a href="javascript:;" class="terms_toggle_bar">
+									<div class="terms_props_item">
+										<input type="checkbox" class="input_checkbox" id="agree_item01">
+										<label for="agree_item01" class="input_checkbox_label">개인정보 수집 · 이용 동의(필수)</label>
+									</div>
+								</a>
+								<div class="terms_contents_group">
+									<p class="terms_cont_item">
+										본 건 이벤트 참가를 위하여 신한라이프가 수집한
+										개인정보는 신한라이프로부터 경품 발송 업무를
+										위탁받은 업체에 제공되며, 수신확인 및 응대를
+										위하여 경품발송일로부터 3개월 후 파기됩니다.
+										본 동의를 거부하실 권리가 있으며, 다만 거부 시
+										이벤트 참여 및 경품 제공이 불가합니다.
+									</p>
+									<p class="terms_cont_item">
+										1. 수집항목: 성명, 연락처, 주소(실물경품 발송대상자에 한함)
+									</p>
+									<p class="terms_cont_item">
+										2. 이용 목적: 이벤트 경품발송
+									</p>
+									<p class="terms_cont_item">
+										3. 수집 및 이용기간: 경품발송일로부터 3개월
+									</p>
+									<p class="terms_cont_item">
+										4. 개인정보 처리위탁에 관한 사항
+									</p>
+									<p class="terms_cont_item">
+										*수탁자명 및 세부사항은 홈페이지 개인정보처리방침 및 이벤트 유의사항을 참고하시기바랍니다.
+									</p>	
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="brick_item">
-						<p class="terms_title">이벤트 참여 및 경품 제공을 위해 동의합니다.</p>
-					</div>
+				</div>
+				<div class="btn_dialogue_submit_wrap">
+					<a href="#" class="btn_dialogue_submit close_trigger"><span class="btn_dialogue_submit_text">취소</span></a>
+					<a href="#" class="btn_dialogue_submit primary"><span class="btn_dialogue_submit_text">참여하기</span></a>
 				</div>
 				<a href="#" class="btn_popup_close close_trigger"></a>
 			</div>
@@ -51,6 +90,13 @@
 		popupShow({
 			target : "#popup_full_event"
 		});
+
+		$(function(){
+			$(".terms_toggle_bar").on("click",function(e){
+				$(this).toggleClass("active");
+				$(".terms_contents_group").toggleClass("active");
+			});
+		})
 	</script>
 </body>
 </html>
