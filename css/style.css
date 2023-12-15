@@ -249,6 +249,12 @@ input.input_checkbox:checked + .input_checkbox_label{}
 .btn_dialogue_submit.primary{flex:1;background:#705deb;border-color:#705deb;box-shadow: 0px 6px 10px 0px rgba(112, 93, 235, 0.3);}
 .btn_dialogue_submit.primary .btn_dialogue_submit_text{color:#fff;}
 
+.temrs_tb{width:100%;box-sizing: border-box; border:1px solid #322d29;text-align: center;margin:10px 0;}
+.temrs_tb thead th{background:#d7d7d7;color:#454545;border:1px solid #322d29;padding:5px;text-align: center;}
+.temrs_tb thead th:last-of-type{}
+.temrs_tb tbody td{background:#efefef;border:1px solid #322d29;padding:5px;text-align: center;}
+.temrs_tb tbody td:last-of-type{}
+
 @media (max-width:750px){
     .page_wrap{width:auto;}
     .btn_bottom_layer,
